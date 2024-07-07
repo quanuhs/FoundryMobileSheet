@@ -4,7 +4,7 @@ Hooks.once('ready', async function() {
     class YourCustomCharacterSheet extends game.dnd5e.applications.actor.ActorSheet5eCharacter {
         /** @override */
         get template() {
-            return "modules/dnd5e-mobile-sheet/templates/sheet.html";
+            return "modules/dnd5e-mobile-sheet/src/templates/sheet.html";
         }
 
         /** @override */
