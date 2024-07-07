@@ -1,7 +1,7 @@
 {
-    "id": "mobile-sheet",
-    "name": "mobile-sheet",
-    "title": "mobile-sheet",
+    "id": "dnd5e-mobile-sheet",
+    "name": "dnd5e-mobile-sheet",
+    "title": "DND5E Mobile Sheet",
     "description": "A custom module to enhance character sheets for mobile viewing.",
     "authors": [
       {
@@ -11,7 +11,7 @@
     ],
     "scripts": ["src/js/main.js"],
     "styles": ["src/css/styles.css"],
-    "version": "1.0.1",
+    "version": "1.0.2",
     "compatibility": {
       "minimum": "10",
       "verified": "12"
