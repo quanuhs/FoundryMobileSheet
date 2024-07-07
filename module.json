@@ -25,5 +25,5 @@
     },
     "url": "https://github.com/quanuhs/FoundryMobileSheet",
     "manifest": "https://raw.githubusercontent.com/quanuhs/FoundryMobileSheet/main/module.json",
-    "download": "https://github.com/quanuhs/FoundryMobileSheet/releases/download/test/module.zip"
+    "download": "https://raw.githubusercontent.com/quanuhs/FoundryMobileSheet/main/module.zip"
   }
