@@ -1,29 +1,30 @@
 {
-    "name": "mobile-sheet",
-    "title": "Mobile Sheet",
+    "id": "foundry-mobile-sheet",
+    "name": "foundry-mobile-sheet",
+    "title": "Foundry Mobile Sheet",
     "description": "A custom module to enhance character sheets for mobile viewing.",
-    "version": "1.0.0",
-    "author": "quanuhs",
-
-    "compatibility": {
-        "minimum": "0.8.6",
-        "verified": "11.308",
-        "maximum": "11"
-    },
-
-    "minimumCoreVersion": "0.8.6",
-    "compatibleCoreVersion": "0.8.6",
+    "authors": [
+      {
+        "name": "Your Name",
+        "email": "your-email@example.com"
+      }
+    ],
     "scripts": ["src/js/main.js"],
     "styles": ["src/css/styles.css"],
-    "packs": [],
-    "languages": [
-        {
-            "lang": "en",
-            "name": "English",
-            "path": "lang/en.json"
-        }
+    "version": "1.0.0",
+    "compatibility": {
+      "minimum": "10",
+      "verified": "12"
+    },
+    "minimumCoreVersion": "10",
+    "esmodules": [
+      "src/js/main.js"
     ],
+    "relationships": {
+      "requires": []
+    },
     "url": "https://github.com/quanuhs/FoundryMobileSheet",
     "manifest": "https://raw.githubusercontent.com/quanuhs/FoundryMobileSheet/main/module.json",
     "download": "https://github.com/quanuhs/FoundryMobileSheet/releases/download/test/module.zip"
-}
+  }
+  
