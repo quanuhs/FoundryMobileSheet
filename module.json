@@ -1,7 +1,7 @@
 {
-    "id": "foundry-mobile-sheet",
-    "name": "foundry-mobile-sheet",
-    "title": "Foundry Mobile Sheet",
+    "id": "mobile-sheet",
+    "name": "mobile-sheet",
+    "title": "mobile-sheet",
     "description": "A custom module to enhance character sheets for mobile viewing.",
     "authors": [
       {

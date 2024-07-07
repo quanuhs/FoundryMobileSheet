@@ -1,10 +1,4 @@
 // src/js/main.js
-Hooks.once('init', async function() {
-    console.log('Your Module | Initializing');
-    // Register custom sheet and make default character sheet
-    Actors.registerSheet('dnd5e', YourCustomCharacterSheet, { makeDefault: true });
-});
-
 class YourCustomCharacterSheet extends ActorSheet5eCharacter {
     /** @override */
     get template() {
@@ -18,3 +12,10 @@ class YourCustomCharacterSheet extends ActorSheet5eCharacter {
         return data;
     }
 }
+
+
+Hooks.once('init', async function() {
+    console.log('Your Module | Initializing');
+    // Register custom sheet and make default character sheet
+    Actors.registerSheet('dnd5e', YourCustomCharacterSheet, { makeDefault: true });
+});
