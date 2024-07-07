@@ -1,0 +1,27 @@
+/* src/css/styles.css */
+.your-custom-sheet {
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .sheet-header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .info-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .abilities, .skills, .inventory {
+    margin-top: 20px;
+  }
+  
+  .abilities .ability, .skills .skill {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  

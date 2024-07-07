@@ -1,0 +1,71 @@
+<!-- src/templates/your-custom-sheet.html -->
+<form class="your-custom-sheet">
+    <header class="sheet-header">
+      <h1>{{actor.data.name}}</h1>
+    </header>
+    <div class="sheet-body">
+      <!-- Basic Info -->
+      <section class="basic-info">
+        <h2>Basic Info</h2>
+        <div class="info-group">
+          <label for="character-name">Name:</label>
+          <input type="text" name="data.name" value="{{actor.data.name}}" />
+        </div>
+        <div class="info-group">
+          <label for="character-race">Race:</label>
+          <input type="text" name="data.details.race" value="{{actor.data.data.details.race}}" />
+        </div>
+        <div class="info-group">
+          <label for="character-class">Class:</label>
+          <input type="text" name="data.details.class" value="{{actor.data.data.details.class}}" />
+        </div>
+      </section>
+  
+      <!-- Health Info -->
+      <section class="health-info">
+        <h2>Health</h2>
+        <div class="info-group">
+          <label for="character-hp">Hit Points:</label>
+          <input type="number" name="data.attributes.hp.value" value="{{actor.data.data.attributes.hp.value}}" />
+          / 
+          <input type="number" name="data.attributes.hp.max" value="{{actor.data.data.attributes.hp.max}}" />
+        </div>
+      </section>
+  
+      <!-- Abilities -->
+      <section class="abilities">
+        <h2>Abilities</h2>
+        {{#each actor.data.data.abilities as |ability key|}}
+        <div class="ability">
+          <label for="ability-{{key}}">{{key}}</label>
+          <input type="number" name="data.abilities.{{key}}.value" value="{{ability.value}}" />
+        </div>
+        {{/each}}
+      </section>
+  
+      <!-- Skills -->
+      <section class="skills">
+        <h2>Skills</h2>
+        {{#each actor.data.data.skills as |skill key|}}
+        <div class="skill">
+          <label for="skill-{{key}}">{{key}}</label>
+          <input type="number" name="data.skills.{{key}}.value" value="{{skill.value}}" />
+        </div>
+        {{/each}}
+      </section>
+  
+      <!-- Inventory -->
+      <section class="inventory">
+        <h2>Inventory</h2>
+        <ul>
+          {{#each actor.data.items as |item|}}
+          <li>
+            <span>{{item.name}}</span>
+            <span>({{item.data.quantity}})</span>
+          </li>
+          {{/each}}
+        </ul>
+      </section>
+    </div>
+  </form>
+  
