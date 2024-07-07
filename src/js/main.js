@@ -8,7 +8,7 @@ Hooks.once('init', async function() {
 class YourCustomCharacterSheet extends ActorSheet5eCharacter {
     /** @override */
     get template() {
-        return "modules/mobile-sheet/templates/your-custom-sheet.html";
+        return "modules/mobile-sheet/templates/sheet.html";
     }
 
     /** @override */

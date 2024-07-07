@@ -1,6 +1,6 @@
 {
-    "id": "foundry-mobile-sheet",
-    "name": "foundry-mobile-sheet",
+    "id": "mobile-sheet",
+    "name": "mobile-sheet",
     "title": "Foundry Mobile Sheet",
     "description": "A custom module to enhance character sheets for mobile viewing.",
     "authors": [
@@ -27,4 +27,3 @@
     "manifest": "https://raw.githubusercontent.com/quanuhs/FoundryMobileSheet/main/module.json",
     "download": "https://github.com/quanuhs/FoundryMobileSheet/releases/download/test/module.zip"
   }
-  
