@@ -1,21 +1,20 @@
-// src/js/main.js
-class YourCustomCharacterSheet extends ActorSheet5eCharacter {
-    /** @override */
-    get template() {
-        return "modules/mobile-sheet/templates/sheet.html";
+// Ensure the game system is ready before defining the custom sheet
+Hooks.once('ready', async function() {
+    // Define the custom character sheet class
+    class YourCustomCharacterSheet extends game.dnd5e.applications.actor.ActorSheet5eCharacter {
+        /** @override */
+        get template() {
+            return "modules/foundry-mobile-sheet/templates/sheet.html";
+        }
+
+        /** @override */
+        async getData() {
+            const data = await super.getData();
+            // Modify data here if needed
+            return data;
+        }
     }
 
-    /** @override */
-    async getData() {
-        const data = await super.getData();
-        // Modify data here if needed
-        return data;
-    }
-}
-
-
-Hooks.once('init', async function() {
-    console.log('Your Module | Initializing');
-    // Register custom sheet and make default character sheet
+    // Register custom sheet and make it the default character sheet
     Actors.registerSheet('dnd5e', YourCustomCharacterSheet, { makeDefault: true });
 });
